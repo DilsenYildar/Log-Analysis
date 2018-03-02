@@ -6,9 +6,6 @@ import com.google.gson.Gson;
 
 public class JsonHandler {
 	/**
-	 * Create a json file with using logAttributes object that i fill above. Send to
-	 * postgresql db.
-	 * 
 	 * @throws IOException
 	 * @throws SQLException
 	 */
