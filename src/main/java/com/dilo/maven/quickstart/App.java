@@ -12,23 +12,23 @@ import java.util.HashSet;
 public class App {
 	static HashSet<LogAttributes> hsAttr = new HashSet<LogAttributes>();
 	public static void main(String[] args) throws UnsupportedEncodingException, IOException {
-		CreateLogFile clf = new CreateLogFile();
 		FileHandler fh = new FileHandler();
-		/**
-		 * This object is using for create a .log file.
-		 */
-		clf.performSomeTask();
 		/**
 		 * This is where i convert to log inputs to json.
 		 */
 		fh.inputsFromLogFile(hsAttr);
+		/**
+		 * This is where i add to logInputs into postgresql db.
+		 */
 		addDB();
+		fh.deleteLogFile();
+		fh.createLogFile();
 	}
 	private static void addDB() {
 		LoggingInDB lidb = new LoggingInDB();
         try {
         	for (LogAttributes la : hsAttr) {
-			lidb.createOp(la);
+        		lidb.createOp(la);
         	}
 		} catch (SQLException e) {
 			e.printStackTrace();
