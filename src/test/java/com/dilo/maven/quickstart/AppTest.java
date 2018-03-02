@@ -36,7 +36,7 @@ public class AppTest
         assertTrue( true );
     }
     public void testPerformSomeTask() {
-    	CreateLogFile clf = new CreateLogFile();
-    	clf.performSomeTask();
+    	CreateLogFileTest clf = new CreateLogFileTest();
+		clf.performSomeTask();
     }
 }
