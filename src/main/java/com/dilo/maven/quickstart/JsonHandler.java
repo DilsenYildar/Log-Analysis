@@ -1,13 +1,10 @@
 package com.dilo.maven.quickstart;
 
 import java.io.IOException;
-import java.util.HashSet;
 
 import com.google.gson.Gson;
 
 public class JsonHandler {
-	HashSet<LogAttributes> hsAttr = new HashSet<LogAttributes>();
-
 	/**
 	 * Create a json file with using logAttributes object that i fill above. Send to
 	 * postgresql db.

@@ -20,7 +20,13 @@ public class App extends AbstractHandler {
 	public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
 		FileHandler fh = new FileHandler();
+		/**
+		 * This is where i convert to log inputs to json.
+		 */
 		fh.inputsFromLogFile();
+		/**
+		 * This is where i add to logInputs into postgresql db.
+		 */
 		fh.addDB();
 		fh.deleteLogFile();
 		fh.createLogFile();

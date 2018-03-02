@@ -6,7 +6,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class LoggingInDB {
+	private Logger logger = LogManager.getLogger();
 	Connection connection = null;
 	Statement stmnt = null;
 	
@@ -21,6 +25,7 @@ public class LoggingInDB {
 			stmnt.executeUpdate(sql);
 
 		} catch (IOException e) {
+			logger.error(e);
 			e.printStackTrace();
 		}
 	}
@@ -30,7 +35,7 @@ public class LoggingInDB {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			logger.warn(e);
 			e.printStackTrace();
 		}
 	}
@@ -43,8 +48,9 @@ public class LoggingInDB {
 			stmnt = connection.createStatement();
 			String sql = "DELETE FROM json WHERE = '"+jh.toJson(la)+"';";
 			stmnt.executeUpdate(sql);
-		} catch (IOException e1) {
-			e1.printStackTrace();
+		} catch (IOException e) {
+			logger.warn(e);
+			e.printStackTrace();
 		}
 		
 	}
