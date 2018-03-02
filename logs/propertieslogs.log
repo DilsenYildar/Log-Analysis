@@ -1,0 +1,20 @@
+[DEBUG] 2018-02-20 15:56:40.179 [main] CreateLogFile - This is a debug message.
+[INFO ] 2018-02-20 15:56:41.179 [main] CreateLogFile - This is an info message.
+[WARN ] 2018-02-20 15:56:42.179 [main] CreateLogFile - This is a warn message.
+[ERROR] 2018-02-20 15:56:43.179 [main] CreateLogFile - This is an error message.
+[FATAL] 2018-02-20 15:56:44.179 [main] CreateLogFile - This is a fatal message.
+[DEBUG] 2018-02-28 19:02:07.033 [main] CreateLogFile - This is a debug message.
+[INFO ] 2018-02-28 19:02:08.033 [main] CreateLogFile - This is an info message.
+[WARN ] 2018-02-28 19:02:09.034 [main] CreateLogFile - This is a warn message.
+[ERROR] 2018-02-28 19:02:10.034 [main] CreateLogFile - This is an error message.
+[FATAL] 2018-02-28 19:02:11.034 [main] CreateLogFile - This is a fatal message.
+[DEBUG] 2018-02-28 19:02:21.467 [main] CreateLogFile - This is a debug message.
+[INFO ] 2018-02-28 19:02:22.468 [main] CreateLogFile - This is an info message.
+[WARN ] 2018-02-28 19:02:23.468 [main] CreateLogFile - This is a warn message.
+[ERROR] 2018-02-28 19:02:24.468 [main] CreateLogFile - This is an error message.
+[FATAL] 2018-02-28 19:02:25.468 [main] CreateLogFile - This is a fatal message.
+[DEBUG] 2018-02-28 19:02:26.468 [main] CreateLogFile - This is a debug message.
+[INFO ] 2018-02-28 19:02:22.468 [main] CreateLogFile - This is an info message.
+[WARN ] 2018-02-28 19:02:28.468 [main] CreateLogFile - This is a warn message.
+[ERROR] 2018-02-28 19:02:29.468 [main] CreateLogFile - This is an error message.
+[FATAL] 2018-02-28 19:02:30.468 [main] CreateLogFile - This is a fatal message.
