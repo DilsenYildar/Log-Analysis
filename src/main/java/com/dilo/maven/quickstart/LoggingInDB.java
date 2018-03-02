@@ -32,6 +32,7 @@ public class LoggingInDB {
 	
 	public void updateOp(LogAttributes la) {
 		try {
+			//////
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
 		} catch (SQLException e) {
