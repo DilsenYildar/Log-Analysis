@@ -18,7 +18,6 @@ public class UpdateReqContext extends AbstractHandler {
 
 	public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		//LoggingInDB lidb = new LoggingInDB();
 		
 		response.setContentType("text/html;charset=utf-8"); 
 		response.setStatus(HttpStatus.FORBIDDEN_403);;		
