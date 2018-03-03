@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 public class FileHandler {
 	private Logger logger = LogManager.getLogger();
-	static HashSet<LogAttributes> hsAttr = new HashSet<LogAttributes>();
+	HashSet<LogAttributes> hsAttr = new HashSet<LogAttributes>();
 	String logFile = "/home/dilo/eclipse-workspace/quickstart/logs/propertieslogs.log";
 
 	/**
@@ -57,7 +57,7 @@ public class FileHandler {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public void deleteLogFile() {
 		try {
 			File file = new File(logFile);

@@ -1,0 +1,23 @@
+[FATAL] 2018-03-02 22:08:46.141 [main] FileHandler - java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+[ERROR] 2018-03-02 22:57:52.144 [qtp662822946-12] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 22:58:33.519 [qtp662822946-15] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 22:59:33.583 [qtp662822946-12] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:00:33.616 [qtp662822946-11] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:05:47.412 [qtp662822946-13] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:06:33.609 [qtp662822946-14] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:07:33.586 [qtp662822946-17] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:08:33.531 [qtp662822946-17] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:11:14.904 [qtp662822946-12] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:11:33.592 [qtp662822946-16] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:12:33.562 [qtp662822946-16] App - java.util.ConcurrentModificationException
+[ERROR] 2018-03-02 23:13:33.596 [qtp662822946-14] App - java.util.ConcurrentModificationException
+[INFO ] 2018-03-03 11:47:45.949 [qtp381259350-12] LogToDBContext - LogToDBContext called
+[INFO ] 2018-03-03 11:53:08.529 [qtp381259350-18] DeleteReqContext - DeleteReqContext called
+[INFO ] 2018-03-03 11:53:08.532 [qtp381259350-17] LogToDBContext - LogToDBContext called
+[WARN ] 2018-03-03 13:24:08.650 [qtp381259350-18] LoggingInDB - org.postgresql.util.PSQLException: ERROR: operator is not unique: unknown ->> unknown
+  Hint: Could not choose a best candidate operator. You might need to add explicit type casts.
+  Position: 41
+[INFO ] 2018-03-03 13:25:08.603 [qtp381259350-13] LogToDBContext - LogToDBContext called
+[WARN ] 2018-03-03 13:25:08.627 [qtp381259350-12] LoggingInDB - org.postgresql.util.PSQLException: ERROR: operator is not unique: unknown ->> unknown
+  Hint: Could not choose a best candidate operator. You might need to add explicit type casts.
+  Position: 41

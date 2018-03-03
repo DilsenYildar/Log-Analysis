@@ -32,7 +32,6 @@ public class LoggingInDB {
 	
 	public void updateOp(LogAttributes la) {
 		try {
-			//////
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
 		} catch (SQLException e) {
@@ -41,15 +40,15 @@ public class LoggingInDB {
 		}
 	}
 	
-	public void deleteOp(LogAttributes la) throws SQLException {
-	
-		JsonHandler jh = new JsonHandler();
+	public void deleteOp() throws SQLException, IOException {
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-			String sql = "DELETE FROM json WHERE = '"+jh.toJson(la)+"';";
+			
+			String sql = " delete from json where data ->> 'loglevel' = '[WARN ]';"; 
 			stmnt.executeUpdate(sql);
-		} catch (IOException e) {
+
+		} catch (SQLException e) {
 			logger.warn(e);
 			e.printStackTrace();
 		}
