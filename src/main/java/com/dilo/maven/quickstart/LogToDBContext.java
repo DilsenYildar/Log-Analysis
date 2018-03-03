@@ -26,12 +26,9 @@ public class LogToDBContext extends AbstractHandler {
 		
 		response.setContentType("text/html;charset=utf-8"); 
 		response.setStatus(HttpStatus.FORBIDDEN_403);;		
-		response.getWriter().write("<h1>welcome to logtodb</h1>");
+		response.getWriter().write("<h1>Your log files in the postgresqldb now!</h1>");
 		baseRequest.setHandled(true);
 	}
 
-	public static void main(String[] args) throws Exception {
-	////
-	}
 }
 
