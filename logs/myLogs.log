@@ -105,3 +105,23 @@
 [WARN ] 2018-03-03 20:03:28.059 [qtp363771819-16] LoggingInDB - java.lang.NullPointerException
 [WARN ] 2018-03-03 20:03:39.023 [qtp363771819-14] LoggingInDB - java.lang.NullPointerException
 [WARN ] 2018-03-03 20:07:39.032 [qtp381259350-16] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-04 16:12:36.127 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:12:36.161 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:12:36.161 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:12:36.161 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:12:36.161 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:29:17.250 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:29:17.252 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:29:17.252 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:29:17.252 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:29:17.252 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:36:40.668 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:36:40.669 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:36:40.669 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:36:40.669 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:36:40.669 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:37:20.493 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:37:20.494 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:37:20.494 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:37:20.494 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:37:20.494 [main] CreateLogFileTest - This is a fatal message.

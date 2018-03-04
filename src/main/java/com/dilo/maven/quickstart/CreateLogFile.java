@@ -1,10 +1,11 @@
 package com.dilo.maven.quickstart;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CreateLogFile {
 	/**
-	 * Using log4j to get log messages.
+	 * Using log4j2 library to get mylogs messages.
 	 */
 	private Logger logger = LogManager.getLogger();
 

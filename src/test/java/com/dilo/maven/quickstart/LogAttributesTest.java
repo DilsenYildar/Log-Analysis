@@ -1,12 +1,12 @@
 package com.dilo.maven.quickstart;
 
-public class LogAttributes {
+public class LogAttributesTest {
 	private String message;
 	private String logger;
 	private String timestamp;
 	private String loglevel;
 
-	public LogAttributes() {
+	public LogAttributesTest() {
 	}
 
 	/**
@@ -21,7 +21,7 @@ public class LogAttributes {
 	 * @param message
 	 *            Message of the log content like 'This is a fatal message.'
 	 */
-	public LogAttributes(String loglevel, String timestamp, String logger, String message) {
+	public LogAttributesTest(String loglevel, String timestamp, String logger, String message) {
 		this.loglevel = loglevel;
 		this.timestamp = timestamp;
 		this.logger = logger;

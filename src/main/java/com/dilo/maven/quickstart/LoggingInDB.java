@@ -12,11 +12,21 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * This class for the db operation CRUD.
+ * 
+ */
 public class LoggingInDB {
 	private Logger logger = LogManager.getLogger();
 	Connection connection = null;
 	Statement stmnt = null;
 
+	/**
+	 * La objects that convert to json, put into the database.
+	 * 
+	 * @param la
+	 * @throws SQLException
+	 */
 	public void createOp(LogAttributes la) throws SQLException {
 
 		JsonHandler jh = new JsonHandler();
@@ -33,6 +43,16 @@ public class LoggingInDB {
 		}
 	}
 
+	/**
+	 * Database delete operation of logs given the URI parameters.
+	 * 
+	 * @param logAttr
+	 *            log attributes like 'loglevel'
+	 * @param logAttrType
+	 *            given for log attributes type like 'DEBUG'
+	 * @throws SQLException
+	 * @throws IOException
+	 */
 	public void deleteOp(String logAttr, String logAttrType) throws SQLException, IOException {
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
@@ -49,11 +69,21 @@ public class LoggingInDB {
 		}
 	}
 
+	/**
+	 * Database update operation of logs given the URI parameters.
+	 * 
+	 * @param logAttr
+	 *            log attributes like 'loglevel'
+	 * @param logAttrType
+	 *            given for log attributes type like 'DEBUG'
+	 */
 	public void updateOp(String logAttr, String logAttrType) {
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-			String sql = "update json set data = '" + logAttrType + "' where data ->> 'message'='This is a debug message.';";
+			String sql = "update json set data = '" + logAttrType
+					+ "' where data ->> 'message'='This is a debug message.';";
+			// sorgulama yanlış update skntılı
 			stmnt.executeUpdate(sql);
 		} catch (SQLException e) {
 			logger.warn(e);
@@ -61,6 +91,16 @@ public class LoggingInDB {
 		}
 	}
 
+	/**
+	 * Database read operation of logs. Given the URI parameters it returns a
+	 * specific log json input
+	 * 
+	 * @param logAttr
+	 *            log attributes like 'loglevel'
+	 * @param logAttrType
+	 *            given for log attributes type like 'DEBUG'
+	 * @return ArrayList<String> queries log rows thrown into the queries ArrayList.
+	 */
 	public ArrayList<String> queryOp(String logAttr, String logAttrType) {
 		List<String> queries = new ArrayList<String>();
 

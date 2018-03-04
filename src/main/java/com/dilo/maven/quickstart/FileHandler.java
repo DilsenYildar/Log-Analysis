@@ -17,7 +17,9 @@ public class FileHandler {
 	String logFile = "/home/dilo/eclipse-workspace/quickstart/logs/propertieslogs.log";
 
 	/**
-	 * @param hsAttr
+	 * Get log inputs from the logfile and add these to the hashset that type is
+	 * LogAttributes.
+	 * 
 	 * @throws FileNotFoundException
 	 */
 	public void inputsFromLogFile() throws FileNotFoundException {
@@ -28,13 +30,10 @@ public class FileHandler {
 				LogAttributes la = new LogAttributes();
 
 				la.setLogLevel(line.substring(line.indexOf("["), line.indexOf("]") + 1));
-
 				line = line.substring(line.indexOf("]") + 1);
 				la.setTimestamp(line.substring(0, line.indexOf("[")));
-
 				line = line.substring(line.indexOf("["));
 				la.setLogger(line.substring(0, line.indexOf("-")));
-
 				la.setMessage(line.substring(line.indexOf("-") + 2));
 				hsAttr.add(la);
 			}
@@ -44,6 +43,10 @@ public class FileHandler {
 		}
 	}
 
+	/**
+	 * Add logs that in the hashset into the database.
+	 * 
+	 */
 	public void addDB() {
 		LoggingInDB lidb = new LoggingInDB();
 		try {
@@ -57,7 +60,12 @@ public class FileHandler {
 			e.printStackTrace();
 		}
 	}
-	
+
+	/**
+	 * After creating the sample log file, it is deleted and a new empty file is
+	 * created.
+	 */
+
 	public void deleteLogFile() {
 		try {
 			File file = new File(logFile);

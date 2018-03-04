@@ -11,8 +11,9 @@ import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
 /**
- *
- * @author Dilsen Yildar <dilsenyldr@yandex.logtodbcom>
+ * When the /path is equal to the /logtodb this class runs. Add logs from the
+ * log file to the PostgreSQL database.
+ * 
  */
 public class LogToDBContext extends AbstractHandler {
 
@@ -21,14 +22,13 @@ public class LogToDBContext extends AbstractHandler {
 		FileHandler fh = new FileHandler();
 		fh.inputsFromLogFile();
 		fh.addDB();
+		response.getWriter().write("<h1>Your log files in the postgresqldb now!</h1>");
 		fh.deleteLogFile();
 		fh.createLogFile();
-		
-		response.setContentType("text/html;charset=utf-8"); 
-		response.setStatus(HttpStatus.FORBIDDEN_403);;		
-		response.getWriter().write("<h1>Your log files in the postgresqldb now!</h1>");
+
+		response.setContentType("text/html;charset=utf-8");
+		response.setStatus(HttpStatus.FORBIDDEN_403);
 		baseRequest.setHandled(true);
 	}
 
 }
-
