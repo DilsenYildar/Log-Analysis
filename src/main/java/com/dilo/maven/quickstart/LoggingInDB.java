@@ -83,7 +83,6 @@ public class LoggingInDB {
 			stmnt = connection.createStatement();
 			String sql = "update json set data = '" + logAttrType
 					+ "' where data ->> 'message'='This is a debug message.';";
-			// sorgulama yanlış update skntılı
 			stmnt.executeUpdate(sql);
 		} catch (SQLException e) {
 			logger.warn(e);
