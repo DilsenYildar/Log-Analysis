@@ -36,13 +36,6 @@ public class AllTests extends TestCase {
 	}
 
 	/**
-	 * Rigourous Test :-)
-	 */
-	public void testApp() {
-		assertTrue(true);
-	}
-
-	/**
 	 * Test the generated log entries in myLogs.log file.
 	 */
 	public void testPerformSomeTask() {
