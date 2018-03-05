@@ -26,11 +26,14 @@ public class QueryReqContext extends AbstractHandler {
 
 		LoggingInDB lidb = new LoggingInDB();
 
+		/**
+		 * Get parameters from the URI that entered.
+		 */
 		Enumeration<String> parameterNames = request.getParameterNames();
 		while (parameterNames.hasMoreElements()) {
 			logAttr = (String) parameterNames.nextElement();
 			logAttrType = request.getParameter(logAttr).toString();
-			response.getWriter().write(String.format("<h3>Logs that you want to query: '%s' : '%s'\n <h3>", logAttr, logAttrType));
+			response.getWriter().write(String.format("<p><i><b>Logs that you want to query: '%s' : '%s'\n </b></i></p>", logAttr, logAttrType));
 		}
 
 		if (logAttr.equals("contains")) {

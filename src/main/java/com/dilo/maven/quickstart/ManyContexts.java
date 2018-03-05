@@ -21,6 +21,7 @@ public class ManyContexts {
 		context.setContextPath("/logtodb");
 		context.setHandler(new LogToDBContext());
 
+		
 		ContextHandler contextDR = new ContextHandler("/delete/");
 		contextDR.setHandler(new DeleteReqContext());
 

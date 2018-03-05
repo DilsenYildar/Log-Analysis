@@ -31,7 +31,7 @@ public class UpdateReqContext extends AbstractHandler {
 			logAttrType = request.getParameter(logAttr).toString();
 		}
 		if (logAttr.equals("logmessage") && logAttrType.equals("Fixed.")) {
-			// lidb.updateOp("logmessage", "Fixed.");
+			// lidb.updateOp("logmessage", "Fixed."); //UPDATE problemli
 		}
 		response.getWriter().write("<h1>Güncellendi.</h1>");
 		response.setContentType("text/html;charset=utf-8");

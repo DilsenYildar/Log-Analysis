@@ -7,7 +7,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Iterator;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,6 +34,7 @@ public class FileHandler {
 				line = line.substring(line.indexOf("["));
 				la.setLogger(line.substring(0, line.indexOf("-")));
 				la.setMessage(line.substring(line.indexOf("-") + 2));
+
 				hsAttr.add(la);
 			}
 		} catch (Exception e) {

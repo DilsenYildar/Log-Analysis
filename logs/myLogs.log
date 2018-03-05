@@ -125,3 +125,186 @@
 [WARN ] 2018-03-04 16:37:20.494 [main] CreateLogFileTest - This is a warn message.
 [ERROR] 2018-03-04 16:37:20.494 [main] CreateLogFileTest - This is an error message.
 [FATAL] 2018-03-04 16:37:20.494 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:57:03.517 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:57:03.518 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:57:03.518 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:57:03.518 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:57:03.519 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:57:24.795 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:57:24.796 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:57:24.796 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:57:24.796 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:57:24.796 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:57:52.121 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:57:52.123 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:57:52.123 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:57:52.123 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:57:52.123 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:58:24.618 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:58:24.620 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:58:24.620 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:58:24.620 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:58:24.621 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:58:28.044 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:58:28.045 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:58:28.045 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:58:28.045 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:58:28.045 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:58:30.596 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:58:30.598 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:58:30.598 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:58:30.598 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:58:30.598 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 16:58:33.607 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 16:58:33.608 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 16:58:33.608 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 16:58:33.608 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 16:58:33.608 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 17:03:51.070 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 17:03:51.071 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 17:03:51.071 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 17:03:51.071 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 17:03:51.072 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 17:05:01.764 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 17:05:01.765 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 17:05:01.765 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 17:05:01.765 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 17:05:01.765 [main] CreateLogFileTest - This is a fatal message.
+[WARN ] 2018-03-04 17:20:57.210 [qtp363771819-14] LoggingInDB - java.lang.NullPointerException
+[WARN ] 2018-03-04 17:22:57.378 [qtp363771819-11] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-04 17:26:55.793 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 17:26:55.795 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 17:26:55.795 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 17:26:55.796 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 17:26:55.796 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 17:27:10.526 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 17:27:10.528 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 17:27:10.528 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 17:27:10.528 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 17:27:10.528 [main] CreateLogFileTest - This is a fatal message.
+[WARN ] 2018-03-04 17:27:57.199 [qtp363771819-17] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-04 17:31:31.994 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 17:31:31.994 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 17:31:31.994 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 17:31:31.995 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 17:31:31.995 [main] CreateLogFileTest - This is a fatal message.
+
+[WARN ] 2018-03-04 19:47:29.298 [qtp1607521710-15] LoggingInDB - java.lang.NullPointerException
+[FATAL] 2018-03-04 20:40:48.381 [qtp363771819-14] FileHandler - java.util.regex.PatternSyntaxException: Unclosed character class near index 0
+[
+^
+[FATAL] 2018-03-04 21:09:26.994 [qtp363771819-12] FileHandler - java.lang.IndexOutOfBoundsException: No group 1
+[FATAL] 2018-03-04 21:10:51.243 [qtp363771819-12] FileHandler - java.lang.IllegalStateException: No match found
+[FATAL] 2018-03-04 21:11:18.700 [qtp363771819-14] FileHandler - java.lang.IndexOutOfBoundsException: No group 1
+[FATAL] 2018-03-04 22:22:14.416 [qtp363771819-16] FileHandler - java.util.regex.PatternSyntaxException: Unclosed character class near index 19
+.*?\\[.*?(\\[).*?(-)
+                   ^
+[FATAL] 2018-03-04 22:22:54.357 [qtp363771819-17] FileHandler - java.util.regex.PatternSyntaxException: Unclosed character class near index 19
+.*?\\[.*?(\\[).*?(-)
+                   ^
+[DEBUG] 2018-03-04 23:02:08.166 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:02:08.238 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:02:08.238 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:02:08.238 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:02:08.238 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 23:02:19.169 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:02:19.171 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:02:19.171 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:02:19.171 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:02:19.171 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 23:02:40.991 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:02:40.992 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:02:40.993 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:02:40.993 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:02:40.993 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 23:08:26.193 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:08:26.194 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:08:26.194 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:08:26.194 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:08:26.194 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 23:08:46.552 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:08:46.553 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:08:46.553 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:08:46.553 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:08:46.553 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-04 23:09:22.299 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:09:22.300 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:09:22.300 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:09:22.300 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:09:22.300 [main] CreateLogFileTest - This is a fatal message.
+[WARN ] 2018-03-04 23:09:29.895 [qtp363771819-17] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-04 23:09:42.763 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:09:42.764 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:09:42.764 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:09:42.764 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:09:42.764 [main] CreateLogFileTest - This is a fatal message.
+[WARN ] 2018-03-04 23:10:29.861 [qtp363771819-18] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-04 23:10:42.620 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:10:42.621 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:10:42.621 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:10:42.622 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:10:42.622 [main] CreateLogFileTest - This is a fatal message.
+[WARN ] 2018-03-04 23:11:29.851 [qtp363771819-15] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-04 23:11:53.290 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:11:53.291 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:11:53.291 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:11:53.291 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:11:53.292 [main] CreateLogFileTest - This is a fatal message.
+[WARN ] 2018-03-04 23:12:29.934 [qtp363771819-11] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-04 23:12:55.199 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-04 23:12:55.200 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-04 23:12:55.200 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-04 23:12:55.200 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-04 23:12:55.200 [main] CreateLogFileTest - This is a fatal message.
+[WARN ] 2018-03-04 23:13:29.873 [qtp363771819-11] LoggingInDB - java.lang.NullPointerException
+[WARN ] 2018-03-04 23:14:29.884 [qtp363771819-16] LoggingInDB - java.lang.NullPointerException
+[WARN ] 2018-03-04 23:15:29.861 [qtp363771819-14] LoggingInDB - java.lang.NullPointerException
+[WARN ] 2018-03-04 23:16:29.901 [qtp363771819-24] LoggingInDB - java.lang.NullPointerException
+[WARN ] 2018-03-04 23:17:29.857 [qtp363771819-14] LoggingInDB - java.lang.NullPointerException
+[WARN ] 2018-03-04 23:18:29.858 [qtp363771819-23] LoggingInDB - java.lang.NullPointerException
+[DEBUG] 2018-03-05 00:02:08.670 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 00:02:08.671 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 00:02:08.672 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 00:02:08.672 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 00:02:08.672 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 14:46:04.336 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 14:46:04.345 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 14:46:04.345 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 14:46:04.345 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 14:46:04.345 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 14:46:26.103 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 14:46:26.106 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 14:46:26.107 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 14:46:26.107 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 14:46:26.107 [main] CreateLogFileTest - This is a fatal message.
+[FATAL] 2018-03-05 14:51:02.010 [qtp363771819-16] FileHandler - java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+[DEBUG] 2018-03-05 14:51:45.334 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 14:51:45.335 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 14:51:45.335 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 14:51:45.335 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 14:51:45.335 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 14:52:35.011 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 14:52:35.012 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 14:52:35.012 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 14:52:35.012 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 14:52:35.012 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 14:53:43.485 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 14:53:43.486 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 14:53:43.487 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 14:53:43.487 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 14:53:43.487 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 14:58:29.135 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 14:58:29.136 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 14:58:29.136 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 14:58:29.136 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 14:58:29.136 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 14:59:09.840 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 14:59:09.841 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 14:59:09.841 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 14:59:09.841 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 14:59:09.841 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 15:03:06.907 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 15:03:06.909 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 15:03:06.909 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 15:03:06.909 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 15:03:06.909 [main] CreateLogFileTest - This is a fatal message.

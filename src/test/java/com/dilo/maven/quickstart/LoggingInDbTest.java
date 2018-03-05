@@ -1,4 +1,5 @@
 package com.dilo.maven.quickstart;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,13 +12,12 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * This class for the db operation CRUD.
+ * 
+ */
 public class LoggingInDbTest {
 	
-	/**
-	 * This class for the db operation CRUD.
-	 * 
-	 */
-	public class LoggingInDB {
 		private Logger logger = LogManager.getLogger();
 		Connection connection = null;
 		Statement stmnt = null;
@@ -138,5 +138,4 @@ public class LoggingInDbTest {
 			}
 			return (ArrayList<String>) queries;
 		}
-	}
 }

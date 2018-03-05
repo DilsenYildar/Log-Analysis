@@ -36,12 +36,15 @@ public class DeleteReqContext extends AbstractHandler {
 
 		LoggingInDB lidb = new LoggingInDB();
 
+		/**
+		 * Get parameters from the URI that entered.
+		 */
 		Enumeration<String> parameterNames = request.getParameterNames();
 		while (parameterNames.hasMoreElements()) {
 			logAttr = (String) parameterNames.nextElement();
 			logAttrType = request.getParameter(logAttr).toString();
 
-			response.getWriter().write(String.format("<h3>Log that you want to delete: '%s' : '%s'\n <h3>", logAttr, logAttrType));
+			response.getWriter().write(String.format("<p><i><b>Logs that you want to delete: '%s' : '%s' \n </b></i></p>", logAttr, logAttrType));
 		}
 		try {
 			lidb.deleteOp(logAttr, logAttrType);
@@ -53,7 +56,6 @@ public class DeleteReqContext extends AbstractHandler {
 		}
 		response.setContentType("text/html;charset=utf-8");
 		response.setStatus(HttpStatus.FORBIDDEN_403);
-		;
 		baseRequest.setHandled(true);
 	}
 }
