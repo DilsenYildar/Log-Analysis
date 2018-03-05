@@ -8,3 +8,63 @@
 [WARN ] 2018-03-05 15:35:05.256 [main] CreateLogFileTest - This is a warn message.
 [ERROR] 2018-03-05 15:35:05.256 [main] CreateLogFileTest - This is an error message.
 [FATAL] 2018-03-05 15:35:05.256 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:07:33.182 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:07:33.183 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:07:33.183 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:07:33.183 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:07:33.183 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:08:41.746 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:08:41.747 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:08:41.747 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:08:41.747 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:08:41.747 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:09:26.499 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:09:26.499 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:09:26.500 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:09:26.500 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:09:26.500 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:15:41.465 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:15:41.467 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:15:41.467 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:15:41.467 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:15:41.467 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:16:42.279 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:16:42.281 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:16:42.282 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:16:42.282 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:16:42.282 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:20:38.590 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:20:38.592 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:20:38.592 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:20:38.592 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:20:38.592 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:21:02.686 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:21:02.687 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:21:02.687 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:21:02.687 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:21:02.687 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:21:22.780 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:21:22.782 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:21:22.782 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:21:22.782 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:21:22.782 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:21:36.515 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:21:36.517 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:21:36.517 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:21:36.517 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:21:36.517 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:23:07.630 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:23:07.631 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:23:07.631 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:23:07.631 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:23:07.631 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:27:15.130 [main] CreateSampleLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:27:15.131 [main] CreateSampleLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:27:15.131 [main] CreateSampleLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:27:15.131 [main] CreateSampleLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:27:15.131 [main] CreateSampleLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 16:27:36.175 [main] CreateSampleLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 16:27:36.176 [main] CreateSampleLogFileTest - This is an info message.
+[WARN ] 2018-03-05 16:27:36.176 [main] CreateSampleLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 16:27:36.176 [main] CreateSampleLogFileTest - This is an error message.
+[FATAL] 2018-03-05 16:27:36.176 [main] CreateSampleLogFileTest - This is a fatal message.

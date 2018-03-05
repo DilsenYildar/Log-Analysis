@@ -10,7 +10,7 @@ import java.util.Iterator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class FileHandler {
+public class FileHandlerTest {
 	private Logger logger = LogManager.getLogger();
 	HashSet<LogAttributes> hsAttr = new HashSet<LogAttributes>();
 	String logFile = "/home/dilo/eclipse-workspace/quickstart/logs/propertieslogs.log";

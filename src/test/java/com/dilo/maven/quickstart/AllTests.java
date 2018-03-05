@@ -1,5 +1,6 @@
 package com.dilo.maven.quickstart;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,7 +21,7 @@ import junit.framework.TestSuite;
  * 
  */
 @RunWith(Suite.class)
-@SuiteClasses({ AllTests.class, LoggingInDbTest.class, CreateLogFileTest.class })
+@SuiteClasses({ AllTests.class, LoggingInDbTest.class, CreateSampleLogFileTest.class })
 public class AllTests extends TestCase {
 	String logAttr;
 	String logAttrType;
@@ -46,7 +47,7 @@ public class AllTests extends TestCase {
 	 * Test the generated log entries in myLogs.log file.
 	 */
 	public void testPerformSomeTask() {
-		CreateLogFileTest clf = new CreateLogFileTest();
+		CreateSampleLogFileTest clf = new CreateSampleLogFileTest();
 		clf.performSomeTask();
 	}
 
@@ -59,7 +60,7 @@ public class AllTests extends TestCase {
 		Statement stmnt = null;
 		LoggingInDbTest lidb = new LoggingInDbTest();
 		LogAttributes la = new LogAttributes();
-		la.setLogger("[main] CreateLogFile ");
+		la.setLogger("[main] CreateSampleLogFile ");
 		la.setLogLevel("[FATAL]");
 		la.setTimestamp(" 2018-03-02 20:59:59.062 ");
 		la.setMessage("This is a fatal message.");
@@ -75,7 +76,7 @@ public class AllTests extends TestCase {
 			while (rs.next()) {
 				query = rs.getString("data");
 			}
-			System.out.println("Test başarılı. Kayıt db'ye eklendi: "+ query);
+			System.out.println("Test başarılı. Kayıt db'ye eklendi: " + query);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -88,7 +89,7 @@ public class AllTests extends TestCase {
 		LoggingInDbTest lidb = new LoggingInDbTest();
 		Connection connection = null;
 		Statement stmnt = null;
-		String query = null;
+		String query = null, query2 = null;
 		String logAttr = "loglevel";
 		String logAttrType = "DEBUG";
 
@@ -96,23 +97,33 @@ public class AllTests extends TestCase {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
 
-			assertEquals("loglevel", logAttr);
-			assertEquals("DEBUG", logAttrType);
-
 			String sql = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
 			ResultSet rs = stmnt.executeQuery(sql);
 			while (rs.next()) {
 				query = rs.getString("data");
 			}
-			if (query != null) {
-				lidb.deleteOp(logAttr, logAttrType);
-				System.out.println("Test başarılı. Silmek istediğiniz kayıt db'den silindi");
-			}else {
-				System.out.println("Silmek istediğiniz kayıt db'de yok.");
+			lidb.deleteOp(logAttr, logAttrType);
+			String sql2 = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
+			ResultSet rs2 = stmnt.executeQuery(sql2);
+			while (rs2.next()) {
+				query2 = rs2.getString("data");
 			}
+			if (query != null && query2 == null) {
+				System.out.println("Test başarılı. Silmek istediğiniz kayıt db'den silindi.");
+			} else
+				System.out.println("Silmek istediğiniz kayıt db'de yok.");
 		} catch (SQLException | IOException e) {
 			e.printStackTrace();
 		}
 	}
 
+	public void testCreateLogFile() {
+		FileHandler fh = new FileHandler();
+		File file = new File("/home/dilo/eclipse-workspace/quickstart/logs/propertieslogs.log");
+		if (file.exists()) {
+			System.out.println("Propertieslogs.log mevcuttur.");
+		}else
+			fh.createLogFile();
+			System.out.println("Propertieslogs.log yaratıldı.");
+	}
 }

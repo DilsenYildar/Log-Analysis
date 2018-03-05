@@ -17,7 +17,7 @@ public class LogAttributesTest {
 	 * @param timestamp
 	 *            Date-Time of the log like '2018-03-02 20:42:25.062'
 	 * @param logger
-	 *            Location of the log. '[main] CreateLogFile'
+	 *            Location of the log. '[main] CreateSampleLogFile'
 	 * @param message
 	 *            Message of the log content like 'This is a fatal message.'
 	 */
