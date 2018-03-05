@@ -21,7 +21,7 @@ import junit.framework.TestSuite;
  * 
  */
 @RunWith(Suite.class)
-@SuiteClasses({ AllTests.class, LoggingInDbTest.class, CreateSampleLogFileTest.class })
+@SuiteClasses({ AllTests.class, CreateSampleLogFileTest.class, LoggingInDbTest.class, FileHandlerTest.class })
 public class AllTests extends TestCase {
 	String logAttr;
 	String logAttrType;
