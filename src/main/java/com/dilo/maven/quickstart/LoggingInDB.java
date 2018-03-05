@@ -81,9 +81,9 @@ public class LoggingInDB {
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-			String sql = "update json set data = '" + logAttrType
+			String sql = "update json set data ->> 'loglevel' = '" + logAttrType
 					+ "' where data ->> 'message'='This is a debug message.';";
-			// sorgulama yanlış update skntılı
+			// update sıkıntılı
 			stmnt.executeUpdate(sql);
 		} catch (SQLException e) {
 			logger.warn(e);

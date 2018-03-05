@@ -54,6 +54,7 @@ public class AllTests extends TestCase {
 	 * Test that the created logAttributes object is registered in the database.
 	 */
 	public void testDBcreate() {
+		String query = null;
 		Connection connection = null;
 		Statement stmnt = null;
 		LoggingInDbTest lidb = new LoggingInDbTest();
@@ -72,10 +73,9 @@ public class AllTests extends TestCase {
 			String sql = "select  * from json where data ->> 'timestamp' = ' 2018-03-02 20:59:59.062 ';";
 			ResultSet rs = stmnt.executeQuery(sql);
 			while (rs.next()) {
-				String query = rs.getString("data");
-				System.out.println(query);
-				System.out.println("Test başarılı. Kayıt db'ye eklendi.");
+				query = rs.getString("data");
 			}
+			System.out.println("Test başarılı. Kayıt db'ye eklendi: "+ query);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

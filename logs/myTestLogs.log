@@ -1,0 +1,10 @@
+[DEBUG] 2018-03-05 15:32:43.765 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 15:32:43.766 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 15:32:43.766 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 15:32:43.766 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 15:32:43.766 [main] CreateLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-05 15:35:05.254 [main] CreateLogFileTest - This is a debug message.
+[INFO ] 2018-03-05 15:35:05.255 [main] CreateLogFileTest - This is an info message.
+[WARN ] 2018-03-05 15:35:05.256 [main] CreateLogFileTest - This is a warn message.
+[ERROR] 2018-03-05 15:35:05.256 [main] CreateLogFileTest - This is an error message.
+[FATAL] 2018-03-05 15:35:05.256 [main] CreateLogFileTest - This is a fatal message.
