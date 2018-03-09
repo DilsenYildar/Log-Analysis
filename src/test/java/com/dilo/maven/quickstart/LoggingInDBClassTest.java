@@ -1,31 +1,29 @@
 package com.dilo.maven.quickstart;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import org.junit.Test;
 
 public class LoggingInDBClassTest {
-
-	/**
-	 * Test the generated log entries in myLogs.log file.
-	 */
-	@Test
-	public void PerformSomeTask() {
-		CreateSampleLogFile clf = new CreateSampleLogFile();
-		clf.performSomeTask();
-	}
 	
 	/**
 	 * 
 	 * Test that the created logAttributes object is registered in the database.
+	 * @throws SQLException 
 	 */
 	@Test
 	public void DBcreate() {
 		
+		String query = null;		
+		Connection connection = null;
+		Statement stmnt = null;
 		LoggingInDB lidb = new LoggingInDB();
 		LogAttributes la = new LogAttributes();
-		
 		la.setLogger("[main] CreateSampleLogFile ");
 		la.setLogLevel("[FATAL]");
 		la.setTimestamp(" 2018-03-02 20:59:59.062 ");
@@ -33,9 +31,20 @@ public class LoggingInDBClassTest {
 
 		try {
 			lidb.createOp(la);
+
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			stmnt = connection.createStatement();
+
+			String sql = "select  * from json where data ->> 'timestamp' = ' 2018-03-02 20:59:59.062 ';";
+			ResultSet rs = stmnt.executeQuery(sql);
+			while (rs.next()) {
+				query = rs.getString("data");
+			}
+			System.out.println("Test başarılı. Kayıt db'ye eklendi: " + query);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
 	}
 	/**
 	 * 
@@ -44,11 +53,31 @@ public class LoggingInDBClassTest {
 	@Test 
 	public void DBdelete() {
 		LoggingInDB lidb = new LoggingInDB();
+		Connection connection = null;
+		Statement stmnt = null;
+		String query = null, query2 = null;
 		String logAttr = "loglevel";
 		String logAttrType = "DEBUG";
 
 		try {
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			stmnt = connection.createStatement();
+
+			String sql = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
+			ResultSet rs = stmnt.executeQuery(sql);
+			while (rs.next()) {
+				query = rs.getString("data");
+			}
 			lidb.deleteOp(logAttr, logAttrType);
+			String sql2 = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
+			ResultSet rs2 = stmnt.executeQuery(sql2);
+			while (rs2.next()) {
+				query2 = rs2.getString("data");
+			}
+			if (query != null && query2 == null) {
+				System.out.println("Test başarılı. Silmek istediğiniz kayıt db'den silindi.");
+			} else
+				System.out.println("Silmek istediğiniz kayıt db'de yok.");
 		} catch (SQLException | IOException e) {
 			e.printStackTrace();
 		}
