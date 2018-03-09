@@ -74,7 +74,6 @@ public class LoggingInDBClassTest {
 			}
 			
 			lidb.deleteOp(logAttr, logAttrType);
-			
 			String sql2 = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
 			ResultSet rs2 = stmnt.executeQuery(sql2);
 			while (rs2.next()) {
@@ -84,7 +83,9 @@ public class LoggingInDBClassTest {
 				System.out.println("Test başarılı. Silmek istediğiniz kayıt db'den silindi.");
 			} else
 				System.out.println("Silmek istediğiniz kayıt db'de yok.");
-		} catch (SQLException | IOException e) {
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
