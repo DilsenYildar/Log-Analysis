@@ -50,7 +50,7 @@ public class DeleteReqContext extends AbstractHandler {
 			lidb.deleteOp(logAttr, logAttrType);
 			response.getWriter().write("Log is deleted!");
 
-		} catch (IOException | SQLException e) {
+		} catch (SQLException e) {
 			logger.warn(e);
 			e.printStackTrace();
 		}

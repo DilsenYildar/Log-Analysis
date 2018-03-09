@@ -24,7 +24,9 @@ public class FileHandler {
 	public void inputsFromLogFile() throws FileNotFoundException {
 		String line = "";
 		FileReader file = new FileReader(logFile);
-		try (BufferedReader br = new BufferedReader(file)) {
+		try{
+			@SuppressWarnings("resource")
+			BufferedReader br = new BufferedReader(file);
 			while ((line = br.readLine()) != null) {
 				LogAttributes la = new LogAttributes();
 
