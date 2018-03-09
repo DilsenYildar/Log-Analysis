@@ -1,5 +1,7 @@
 package com.dilo.maven.quickstart;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,12 +16,13 @@ public class LoggingInDBClassTest {
 	/**
 	 * 
 	 * Test that the created logAttributes object is registered in the database.
-	 * @throws SQLException 
 	 */
 	@Test
 	public void DBcreate() {
 		
-		String query = null;		
+		String query = null;
+		String jsonintoDB = "{\"logger\": \"[main] CreateSampleLogFile \", \"message\": \"This is a fatal message.\", \"loglevel\": \"[FATAL]\", \"timestamp\": \" 2018-03-02 20:59:59.062 \"}";
+		//database'de olmasını istediğim format 
 		Connection connection = null;
 		Statement stmnt = null;
 		LoggingInDB lidb = new LoggingInDB();
@@ -30,17 +33,18 @@ public class LoggingInDBClassTest {
 		la.setMessage("This is a fatal message.");
 
 		try {
-			lidb.createOp(la);
-
+			lidb.createOp(la); //bu fonk. çalıştırıldıktan sonra database'e eklenen la'yı olduğu gibi query değişkenine çekeceğim...
+			
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-
 			String sql = "select  * from json where data ->> 'timestamp' = ' 2018-03-02 20:59:59.062 ';";
 			ResultSet rs = stmnt.executeQuery(sql);
 			while (rs.next()) {
 				query = rs.getString("data");
 			}
-			System.out.println("Test başarılı. Kayıt db'ye eklendi: " + query);
+			
+			assertEquals(jsonintoDB, query); //beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen aynı..
+			System.out.println("Test başarılı. Kayıt db'ye eklendi: ");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -68,7 +72,9 @@ public class LoggingInDBClassTest {
 			while (rs.next()) {
 				query = rs.getString("data");
 			}
+			
 			lidb.deleteOp(logAttr, logAttrType);
+			
 			String sql2 = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
 			ResultSet rs2 = stmnt.executeQuery(sql2);
 			while (rs2.next()) {
