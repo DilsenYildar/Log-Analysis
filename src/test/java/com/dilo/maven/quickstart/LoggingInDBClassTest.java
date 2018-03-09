@@ -9,9 +9,22 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class LoggingInDBClassTest {
+	
+	@BeforeClass  
+    public static void setUpBeforeClass() throws Exception {  
+        System.out.println("before LoggingInDBClass");  
+    }  
+    @Before  
+    public void setUp() throws Exception {  
+        System.out.println("before");  
+    }  
 	
 	/**
 	 * 
@@ -89,5 +102,16 @@ public class LoggingInDBClassTest {
 			e.printStackTrace();
 		}
 	}
+	
+
+    @After  
+    public void tearDown() throws Exception {  
+        System.out.println("after");  
+    }  
+  
+    @AfterClass  
+    public static void tearDownAfterClass() throws Exception {  
+        System.out.println("after LoggingInDBClass");  
+    }  
 }
 
