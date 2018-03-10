@@ -71,8 +71,7 @@ public class LoggingInDBTest {
 			 * 2018-03-02 20:59:59.062 "}
 			 */
 			assertNotEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
-												// aynı..
-			System.out.println("Test başarılı. Kayıt db'ye eklendi: ");
+												// aynı değil...
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
