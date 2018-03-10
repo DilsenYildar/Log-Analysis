@@ -20,7 +20,7 @@ public class LoggingInDBTest {
 	private LogAttributes la;
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
+	public static void setUpBeforeClass(){
 		System.out.println("before LoggingInDBClass");
 	}
 
@@ -30,7 +30,7 @@ public class LoggingInDBTest {
 	 */
 	@Before
 	public void setUp() {
-		System.out.println("before");
+		System.out.println("before method");
 		lidb = new LoggingInDB();
 		la = new LogAttributes();
 	}
@@ -40,7 +40,7 @@ public class LoggingInDBTest {
 	 * Test that the created logAttributes object is registered in the database.
 	 */
 	@Test
-	public void createOp() {
+	public void CreateOp() {
 
 		String result = null;
 		String expected = "{\"loglevel\":\"[FATAL]\",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"logger\":\"[main] CreateSampleLogFile \",\"message\":\"This is a fatal message.\"}";
@@ -122,12 +122,12 @@ public class LoggingInDBTest {
 	}
 
 	@After
-	public void tearDown() throws Exception {
-		System.out.println("after");
+	public void tearDown() {
+		System.out.println("after method");
 	}
 
 	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
+	public static void tearDownAfterClass(){
 		System.out.println("after LoggingInDBClass");
 	}
 }

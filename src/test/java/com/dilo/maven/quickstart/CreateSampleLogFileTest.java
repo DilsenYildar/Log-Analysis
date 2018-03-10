@@ -10,7 +10,7 @@ public class CreateSampleLogFileTest {
 	private CreateSampleLogFile clf;
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
+	public static void setUpBeforeClass() {
 		System.out.println("before class");
 	}
 
@@ -20,7 +20,7 @@ public class CreateSampleLogFileTest {
 	 */
 	@Before
 	public void setUp() {
-		System.out.println("before");
+		System.out.println("before method");
 		clf = new CreateSampleLogFile();
 	}
 
@@ -33,12 +33,12 @@ public class CreateSampleLogFileTest {
 	}
 
 	@After
-	public void tearDown() throws Exception {
-		System.out.println("after");
+	public void tearDown() {
+		System.out.println("after method");
 	}
 
 	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
+	public static void tearDownAfterClass(){
 		System.out.println("after class");
 	}
 

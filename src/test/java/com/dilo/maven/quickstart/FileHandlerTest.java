@@ -16,7 +16,7 @@ public class FileHandlerTest {
 	private LogAttributes la;
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
+	public static void setUpBeforeClass() {
 		System.out.println("before FindHandlerClass");
 	}
 
@@ -26,7 +26,7 @@ public class FileHandlerTest {
 	 */
 	@Before
 	public void setUp() {
-		System.out.println("before");
+		System.out.println("before method");
 		fh = new FileHandler();
 		file = new File(fh.logFile);
 		la = new LogAttributes("[FATAL]", " 2018-03-02 20:59:59.062 ", "[main] CreateSampleLogFile ",
@@ -63,12 +63,12 @@ public class FileHandlerTest {
 	}
 
 	@After
-	public void tearDown() throws Exception {
-		System.out.println("after");
+	public void tearDown(){
+		System.out.println("after method");
 	}
 
 	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
+	public static void tearDownAfterClass(){
 		System.out.println("after FindHandlerClass");
 	}
 }
