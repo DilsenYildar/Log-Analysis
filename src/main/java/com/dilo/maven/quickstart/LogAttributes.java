@@ -1,10 +1,12 @@
 package com.dilo.maven.quickstart;
 
 public class LogAttributes {
-	private String message;
-	private String logger;
-	private String timestamp;
 	private String loglevel;
+	private String timestamp;
+	private String logger;
+	private String message;
+	
+
 
 	public LogAttributes() {
 	}
