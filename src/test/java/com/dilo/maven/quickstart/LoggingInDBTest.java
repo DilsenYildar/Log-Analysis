@@ -40,7 +40,7 @@ public class LoggingInDBTest {
 	 * Test that the created logAttributes object is registered in the database.
 	 */
 	@Test
-	public void DBcreate() {
+	public void CreateOp() {
 
 		String result = null;
 		String expected = "{\"loglevel\":\"[FATAL]\",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"logger\":\"[main] CreateSampleLogFile \",\"message\":\"This is a fatal message.\"}";
@@ -71,7 +71,7 @@ public class LoggingInDBTest {
 			 */
 			assertNotEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
 												// aynı değil(postgresql'in jsonb tipinden dolayı olduğunu düşündüğüm değişiklik)
-			System.out.println("Test başarılı. Kayıt db'ye eklendi: ");
+			System.out.println("Test başarılı. Kayıt db'ye eklendi ");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -83,7 +83,7 @@ public class LoggingInDBTest {
 	 * Test that the specific log given the parameters from the URI is deleted.
 	 */
 	@Test
-	public void DBdelete() {
+	public void deleteOp() {
 		Connection connection = null;
 		Statement stmnt = null;
 		String result = null, resultAfterDelete = null;
