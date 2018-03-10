@@ -40,7 +40,7 @@ public class LoggingInDBTest {
 	 * Test that the created logAttributes object is registered in the database.
 	 */
 	@Test
-	public void CreateOp() {
+	public void createOp() {
 
 		String result = null;
 		String expected = "{\"loglevel\":\"[FATAL]\",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"logger\":\"[main] CreateSampleLogFile \",\"message\":\"This is a fatal message.\"}";
