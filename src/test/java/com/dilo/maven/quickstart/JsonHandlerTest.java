@@ -33,8 +33,6 @@ public class JsonHandlerTest {
 	@Test
 	public void toJson() {
 		String expected = "{\"message\":\"This is a fatal message.\",\"logger\":\"[main] CreateSampleLogFile \",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"loglevel\":\"[FATAL]\"}";
-		// logAttributes nesnesinde yarattığım sıraya göre json oluşturulmasını
-		// bekliyorum..
 
 		la.setLogger("[main] CreateSampleLogFile ");
 		la.setLogLevel("[FATAL]");
