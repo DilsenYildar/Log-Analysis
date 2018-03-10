@@ -20,6 +20,10 @@ public class FileHandlerTest {
 		System.out.println("before FindHandlerClass");
 	}
 
+	@AfterClass
+	public static void tearDownAfterClass(){
+		System.out.println("after FindHandlerClass");
+	}
 	/**
 	 * Initializing Tests with @Before Methods
 	 *
@@ -31,6 +35,10 @@ public class FileHandlerTest {
 		file = new File(fh.logFile);
 		la = new LogAttributes("[FATAL]", " 2018-03-02 20:59:59.062 ", "[main] CreateSampleLogFile ",
 				"This is a fatal message.");
+	}
+	@After
+	public void tearDown(){
+		System.out.println("after method");
 	}
 
 	/**
@@ -62,13 +70,4 @@ public class FileHandlerTest {
 		System.out.println("Is the HashSet is empty? " + fh.hsAttr.isEmpty());
 	}
 
-	@After
-	public void tearDown(){
-		System.out.println("after method");
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass(){
-		System.out.println("after FindHandlerClass");
-	}
 }

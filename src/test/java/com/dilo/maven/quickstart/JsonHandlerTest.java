@@ -19,6 +19,11 @@ public class JsonHandlerTest {
 		System.out.println("before JsonHandlerClass");
 	}
 
+	@AfterClass
+	public static void tearDownAfterClass(){
+		System.out.println("after JsonHandlerClass");
+	}
+
 	/**
 	 * Initializing Tests with @Before Methods
 	 * 
@@ -29,6 +34,12 @@ public class JsonHandlerTest {
 		jh = new JsonHandler();
 		la = new LogAttributes();
 	}
+
+	@After
+	public void tearDown() {
+		System.out.println("after method");
+	}
+
 
 	@Test
 	public void toJson() {
@@ -46,16 +57,6 @@ public class JsonHandlerTest {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	@After
-	public void tearDown() {
-		System.out.println("after method");
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass(){
-		System.out.println("after JsonHandlerClass");
 	}
 
 }

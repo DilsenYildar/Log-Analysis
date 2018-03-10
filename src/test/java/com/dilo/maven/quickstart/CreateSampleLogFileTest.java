@@ -14,6 +14,11 @@ public class CreateSampleLogFileTest {
 		System.out.println("before class");
 	}
 
+	@AfterClass
+	public static void tearDownAfterClass(){
+		System.out.println("after class");
+	}
+	
 	/**
 	 * Initializing Tests with @Before Methods
 	 *
@@ -23,23 +28,16 @@ public class CreateSampleLogFileTest {
 		System.out.println("before method");
 		clf = new CreateSampleLogFile();
 	}
-
+	@After
+	public void tearDown() {
+		System.out.println("after method");
+	}
 	/**
 	 * Test the generated log entries in myLogs.log file.
 	 */
 	@Test
 	public void PerformSomeTask() {
 		clf.performSomeTask();
-	}
-
-	@After
-	public void tearDown() {
-		System.out.println("after method");
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass(){
-		System.out.println("after class");
 	}
 
 }
