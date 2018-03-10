@@ -7,7 +7,7 @@ import org.junit.runner.notification.Failure;
 public class MyTestRunner {
 
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(FileHandlerClassTest.class, JsonHandlerClassTest.class, LoggingInDBClassTest.class);
+		Result result = JUnitCore.runClasses(FileHandlerTest.class, JsonHandlerTest.class, LoggingInDBTest.class);
 	    for (Failure failure : result.getFailures()) {
 	      System.out.println(failure.toString());
 	    }
