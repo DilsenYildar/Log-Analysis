@@ -70,8 +70,8 @@ public class LoggingInDBTest {
 			 * 2018-03-02 20:59:59.062 "}
 			 */
 			assertNotEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
-												// aynı değil(postgresql'in jsonb tipinden dolayı 
-												//olduğunu düşündüğüm değişiklik)..
+												// aynı değil(postgresql'in jsonb tipinden dolayı olduğunu düşündüğüm değişiklik)
+			System.out.println("Test başarılı. Kayıt db'ye eklendi: ");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -86,7 +86,7 @@ public class LoggingInDBTest {
 	public void DBdelete() {
 		Connection connection = null;
 		Statement stmnt = null;
-		String query = null, query2 = null;
+		String result = null, resultAfterDelete = null;
 		String logAttr = "loglevel";
 		String logAttrType = "DEBUG";
 
@@ -97,19 +97,23 @@ public class LoggingInDBTest {
 			String sql = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
 			ResultSet rs = stmnt.executeQuery(sql);
 			while (rs.next()) {
-				query = rs.getString("data");
+				result = rs.getString("data");
 			}
-
+			
 			lidb.deleteOp(logAttr, logAttrType);
 			String sql2 = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
 			ResultSet rs2 = stmnt.executeQuery(sql2);
 			while (rs2.next()) {
-				query2 = rs2.getString("data");
+				resultAfterDelete = rs2.getString("data");
 			}
-			if (query != null && query2 == null) {
+			
+			if(result != null) {
 				System.out.println("Test başarılı. Silmek istediğiniz kayıt db'den silindi.");
-			} else
-				System.out.println("Silmek istediğiniz kayıt db'de yok.");
+				assertNotEquals(result, resultAfterDelete);
+			}else {
+				System.out.println("Silmek istediğiniz kayıt zaten db'de yok.");
+				assertNull(result);
+			}				
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
