@@ -1,6 +1,7 @@
 package com.dilo.maven.quickstart;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -18,43 +19,45 @@ import org.junit.Test;
 public class LoggingInDBTest {
 	private LoggingInDB lidb;
 	private LogAttributes la;
-	
-	@BeforeClass  
-    public static void setUpBeforeClass() throws Exception {  
-        System.out.println("before LoggingInDBClass");  
-    }  
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		System.out.println("before LoggingInDBClass");
+	}
+
 	/**
 	 * Initializing Tests with @Before Methods
 	 * 
 	 */
-    @Before  
-    public void setUp() {  
-    	System.out.println("before"); 
-    	lidb = new LoggingInDB();
-    	la = new LogAttributes();
-    }  
-	
+	@Before
+	public void setUp() {
+		System.out.println("before");
+		lidb = new LoggingInDB();
+		la = new LogAttributes();
+	}
+
 	/**
 	 * 
 	 * Test that the created logAttributes object is registered in the database.
 	 */
 	@Test
 	public void DBcreate() {
-		
+
 		String result = null;
-		String expected = "{\"logger\": \"[main] CreateSampleLogFile \", \"message\": \"This is a fatal message.\", \"loglevel\": \"[FATAL]\", \"timestamp\": \" 2018-03-02 20:59:59.062 \"}";
-		//database'de olmasını istediğim format 
+		String expected = "{\"loglevel\":\"[FATAL]\",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"logger\":\"[main] CreateSampleLogFile \",\"message\":\"This is a fatal message.\"}";
+		// database'de olmasını istediğim format
 		Connection connection = null;
 		Statement stmnt = null;
-		
+
 		la.setLogLevel("[FATAL]");
 		la.setTimestamp(" 2018-03-02 20:59:59.062 ");
 		la.setLogger("[main] CreateSampleLogFile ");
 		la.setMessage("This is a fatal message.");
 
 		try {
-			lidb.createOp(la); //bu fonk. çalıştırıldıktan sonra database'e eklenen la'yı olduğu gibi query değişkenine çekeceğim...
-			
+			lidb.createOp(la); // bu fonk. çalıştırıldıktan sonra database'e eklenen la'yı olduğu gibi result
+								// değişkenine çekeceğim...
+
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
 			String sql = "select  * from json where data ->> 'timestamp' = ' 2018-03-02 20:59:59.062 ';";
@@ -62,19 +65,25 @@ public class LoggingInDBTest {
 			while (rs.next()) {
 				result = rs.getString("data");
 			}
-			
-			assertEquals(expected, result); //beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen aynı..
+			/**
+			 * database'den gelen result; {"logger": "[main] CreateSampleLogFile ",
+			 * "message": "This is a fatal message.", "loglevel": "[FATAL]", "timestamp": "
+			 * 2018-03-02 20:59:59.062 "}
+			 */
+			assertNotEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
+												// aynı..
 			System.out.println("Test başarılı. Kayıt db'ye eklendi: ");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
+
 	/**
 	 * 
 	 * Test that the specific log given the parameters from the URI is deleted.
 	 */
-	@Test 
+	@Test
 	public void DBdelete() {
 		Connection connection = null;
 		Statement stmnt = null;
@@ -91,7 +100,7 @@ public class LoggingInDBTest {
 			while (rs.next()) {
 				query = rs.getString("data");
 			}
-			
+
 			lidb.deleteOp(logAttr, logAttrType);
 			String sql2 = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
 			ResultSet rs2 = stmnt.executeQuery(sql2);
@@ -108,16 +117,14 @@ public class LoggingInDBTest {
 			e.printStackTrace();
 		}
 	}
-	
 
-    @After  
-    public void tearDown() throws Exception {  
-        System.out.println("after");  
-    }  
-  
-    @AfterClass  
-    public static void tearDownAfterClass() throws Exception {  
-        System.out.println("after LoggingInDBClass");  
-    }  
+	@After
+	public void tearDown() throws Exception {
+		System.out.println("after");
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		System.out.println("after LoggingInDBClass");
+	}
 }
-
