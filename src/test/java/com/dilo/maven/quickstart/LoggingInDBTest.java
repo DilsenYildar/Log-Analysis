@@ -47,9 +47,9 @@ public class LoggingInDBTest {
 		Connection connection = null;
 		Statement stmnt = null;
 		
-		la.setLogger("[main] CreateSampleLogFile ");
 		la.setLogLevel("[FATAL]");
 		la.setTimestamp(" 2018-03-02 20:59:59.062 ");
+		la.setLogger("[main] CreateSampleLogFile ");
 		la.setMessage("This is a fatal message.");
 
 		try {

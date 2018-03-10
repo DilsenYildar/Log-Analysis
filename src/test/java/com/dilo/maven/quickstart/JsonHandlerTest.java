@@ -32,11 +32,12 @@ public class JsonHandlerTest {
 
 	@Test
 	public void toJson() {
-		String expected = "{\"message\":\"This is a fatal message.\",\"logger\":\"[main] CreateSampleLogFile \",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"loglevel\":\"[FATAL]\"}";
+		String expected = "{\"loglevel\":\"[FATAL]\",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"logger\":\"[main] CreateSampleLogFile \",\"message\":\"This is a fatal message.\"}";
 
-		la.setLogger("[main] CreateSampleLogFile ");
+		
 		la.setLogLevel("[FATAL]");
 		la.setTimestamp(" 2018-03-02 20:59:59.062 ");
+		la.setLogger("[main] CreateSampleLogFile ");
 		la.setMessage("This is a fatal message.");
 
 		try {
