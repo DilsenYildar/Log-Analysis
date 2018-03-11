@@ -24,39 +24,55 @@ public class LoggingInDBTest {
 	Statement stmnt;
 
 	@BeforeClass
-	public static void setUpBeforeClass(){
+	public static void setUpBeforeClass() {
 		System.out.println("before LoggingInDBClass");
 	}
+
 	@AfterClass
-	public static void tearDownAfterClass(){
+	public static void tearDownAfterClass() {
 		System.out.println("after LoggingInDBClass");
 	}
+
 	/**
 	 * Initializing Tests with @Before Methods
 	 * 
+	 * @throws IOException
+	 * 
 	 */
 	@Before
-	public void setUp() {
+	public void setUp() throws IOException {
 		System.out.println("before method");
 		lidb = new LoggingInDB();
 		la = new LogAttributes();
-		
-		try {
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
-			stmnt = connection.createStatement();} 
-		catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
+		/**
+		 * deleteOp fonk. için parametreler...
+		 */
 		logAttr = "loglevel";
 		logAttrType = "DEBUG";
-		
+
+		try {
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			stmnt = connection.createStatement();
+
+			/**
+			 * deleteOp için setup kısmında dbye kaydettiğim execute kısmında sileceğim
+			 * kayıt...
+			 */
+			la.setLogLevel("[DEBUG]");
+			la.setTimestamp(" 2018-03-11 13:40:00.062 ");
+			la.setLogger("[main] LoggingInDBTest ");
+			la.setMessage("This is a debug message.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
+
 	@After
 	public void tearDown() {
 		System.out.println("after method");
 	}
-	
+
 	/**
 	 * 
 	 * Test that the created logAttributes object is registered in the database.
@@ -76,18 +92,18 @@ public class LoggingInDBTest {
 		try {
 			lidb.createOp(la); // bu fonk. çalıştırıldıktan sonra database'e eklenen la'yı olduğu gibi result
 								// değişkenine çekeceğim...
-			String sql = "select  * from json where data ->> 'timestamp' = ' 2018-03-02 20:59:59.062 ';";
+			String sql = "select  * from logattr where attributes ->> 'timestamp' = ' 2018-03-02 20:59:59.062 ';";
 			ResultSet rs = stmnt.executeQuery(sql);
 			while (rs.next()) {
-				result = rs.getString("data");
+				result = rs.getString("attributes");
 			}
 			/**
-			 * database'den gelen result: {"logger": "[main] CreateSampleLogFile ",
-			 * "message": "This is a fatal message.", "loglevel": "[FATAL]", "timestamp": "
-			 * 2018-03-02 20:59:59.062 "}
+			 * database'den gelen result: {"loglevel":"[FATAL]","timestamp":" 2018-03-02
+			 * 20:59:59.062 ","logger":"[main] CreateSampleLogFile ","message":"This is a
+			 * fatal message."}
 			 */
 			assertEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
-												// aynı değil(postgresql'in jsonb tipinden dolayı olduğunu düşündüğüm değişiklik)
+											// aynı
 			System.out.println("Test başarılı. Kayıt db'ye eklendi ");
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -101,30 +117,39 @@ public class LoggingInDBTest {
 	 */
 	@Test
 	public void deleteOp() {
-		String result = null, resultAfterDelete = null;
-
+		String resultAfterDelete = null;
 		try {
-
-			String sql = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
-			ResultSet rs = stmnt.executeQuery(sql);
-			while (rs.next()) {
-				result = rs.getString("data");
-			}
-			
+			lidb.createOp(la);
+			/**
+			 * loglevel=[DEBUG] olan kayıt setupta kaydedildikten sonra, execute kısmında
+			 * dbye eklenir daha sonra deleteOp çalıştırılır. deleteOp çalıştırıldktan sonra
+			 * bu kayıt silinir.. db'den silinen kayıt için sorgu atılır ve dönen sonuç
+			 * resultAfterDelete değişkenine çekilir... resultAfterDelete null ise o kayıt
+			 * dbde yoktur... assertNull ile kontrolünü sağlarız...
+			 */
 			lidb.deleteOp(logAttr, logAttrType);
-			String sql2 = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
+			String sql2 = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
 			ResultSet rs2 = stmnt.executeQuery(sql2);
 			while (rs2.next()) {
-				resultAfterDelete = rs2.getString("data");
+				resultAfterDelete = rs2.getString("attributes");
 			}
-			
-			if(result != null) {
-				System.out.println("Test başarılı. Silmek istediğiniz kayıt db'den silindi.");
-				assertNotEquals(result, resultAfterDelete);
-			}else {
-				System.out.println("Silmek istediğiniz kayıt zaten db'de yok.");
-				assertNull(result);
-			}				
+			assertNull(resultAfterDelete);
+			System.out.println("Silmek istediğiniz kayıt db'den silindi.." + resultAfterDelete);
+
+			/**
+			 * hata olmasını beklediğim ve fonksiyonun ne yapacağını assert ettiğim bölüm...
+			 * 
+			 * loglevel=[DEBUG] olan kayıt silindikten sonra aynı kayıt için tekrar deleteOp
+			 * fonksiyonu çalıştırılmak istenirse yani var olmayan bir kaydı silmeye
+			 * çalışırsak null dönecektir, resultAfterDelete değişkenine db'deki sonuç daha
+			 * önce çekilmişti...
+			 */
+			lidb.deleteOp(logAttr, logAttrType);
+			if (resultAfterDelete == null) {
+				System.out.println("Silmek istediğiniz kayıt zaten db'de yok:" + resultAfterDelete);
+				assertNull(resultAfterDelete);
+			}
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

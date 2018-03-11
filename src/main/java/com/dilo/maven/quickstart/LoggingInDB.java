@@ -32,7 +32,7 @@ public class LoggingInDB {
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-			String sql = "INSERT INTO json (data) VALUES ('" + jh.toJson(la) + "');";
+			String sql = "INSERT INTO logattr (attributes) VALUES ('" + jh.toJson(la) + "');";
 			stmnt.executeUpdate(sql);
 
 		} catch (IOException e) {
@@ -56,10 +56,10 @@ public class LoggingInDB {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
 			if (logAttrType.length() == 4) { // this is for INFO and WARN attributes type. OTHER POSSIBLE SOLUTIONS????
-				String sql = " delete from json where data ->> '" + logAttr + "' = '[" + logAttrType + " ]';";
+				String sql = " delete from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + " ]';";
 				stmnt.executeUpdate(sql);
 			}
-			String sql = " delete from json where data ->> '" + logAttr + "' = '[" + logAttrType + "]';";
+			String sql = " delete from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
 			stmnt.executeUpdate(sql);
 		} catch (Exception e) {
 			logger.warn(e);
@@ -79,8 +79,8 @@ public class LoggingInDB {
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-			String sql = "update json set data ->> 'loglevel' = '" + logAttrType
-					+ "' where data ->> 'message'='This is a debug message.';";
+			String sql = "update logattr set attributes ->> 'loglevel' = '" + logAttrType
+					+ "' where attributes ->> 'message'='This is a debug message.';";
 			// update sıkıntılı
 			stmnt.executeUpdate(sql);
 		} catch (SQLException e) {
@@ -106,26 +106,26 @@ public class LoggingInDB {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
 			if (logAttr.equals("contains")) {
-				String sql = "select  * from json where data ->> 'logger' = '" + logAttrType + " ';";
+				String sql = "select  * from logattr where attributes ->> 'logger' = '" + logAttrType + " ';";
 				ResultSet rs = stmnt.executeQuery(sql);
 				while (rs.next()) {
-					String query = rs.getString("data");
+					String query = rs.getString("attributes");
 					queries.add(query);
 				}
 			} else {
 				if (logAttrType.length() == 4) { // this is for INFO and WARN attributes type. OTHER POSSIBLE
 													// SOLUTIONS????
-					String sql = "select  * from json where data ->> '" + logAttr + "' = '[" + logAttrType + " ]';";
+					String sql = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + " ]';";
 					ResultSet rs = stmnt.executeQuery(sql);
 					while (rs.next()) {
-						String query = rs.getString("data");
+						String query = rs.getString("attributes");
 						queries.add(query);
 					}
 				}
-				String sql = "select  * from json where data ->> '" + logAttr + "' = '[" + logAttrType + "]';";
+				String sql = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
 				ResultSet rs = stmnt.executeQuery(sql);
 				while (rs.next()) {
-					String query = rs.getString("data");
+					String query = rs.getString("attributes");
 					queries.add(query);
 				}
 			}

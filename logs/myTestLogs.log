@@ -68,3 +68,243 @@
 [WARN ] 2018-03-05 16:27:36.176 [main] CreateSampleLogFileTest - This is a warn message.
 [ERROR] 2018-03-05 16:27:36.176 [main] CreateSampleLogFileTest - This is an error message.
 [FATAL] 2018-03-05 16:27:36.176 [main] CreateSampleLogFileTest - This is a fatal message.
+[DEBUG] 2018-03-09 19:52:22.689 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 19:52:22.702 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 19:52:22.703 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 19:52:22.703 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 19:52:22.703 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 19:52:42.097 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 19:52:42.099 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 19:52:42.099 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 19:52:42.099 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 19:52:42.099 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 19:53:54.543 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 19:53:54.544 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 19:53:54.544 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 19:53:54.544 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 19:53:54.544 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 19:53:57.343 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 19:53:57.344 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 19:53:57.344 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 19:53:57.344 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 19:53:57.345 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 19:54:09.888 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 19:54:09.889 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 19:54:09.889 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 19:54:09.889 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 19:54:09.889 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 19:54:43.223 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 19:54:43.224 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 19:54:43.224 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 19:54:43.224 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 19:54:43.224 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:03:49.687 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:03:49.734 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:03:49.734 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:03:49.734 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:03:49.734 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:04:05.834 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:04:05.835 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:04:05.836 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:04:05.836 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:04:05.836 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:04:49.062 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:04:49.063 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:04:49.063 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:04:49.063 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:04:49.063 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:08:20.083 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:08:20.084 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:08:20.084 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:08:20.084 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:08:20.084 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:10:38.826 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:10:38.827 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:10:38.827 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:10:38.827 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:10:38.827 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:27:54.473 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:27:54.474 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:27:54.474 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:27:54.474 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:27:54.474 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:28:26.201 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:28:26.202 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:28:26.202 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:28:26.202 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:28:26.202 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:29:37.135 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:29:37.136 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:29:37.137 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:29:37.137 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:29:37.137 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:31:31.505 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:31:31.505 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:31:31.507 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:31:31.507 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:31:31.507 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:33:09.288 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:33:09.290 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:33:09.290 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:33:09.291 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:33:09.291 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:33:48.350 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:33:48.351 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:33:48.351 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:33:48.351 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:33:48.351 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:37:32.203 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:37:32.204 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:37:32.204 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:37:32.204 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:37:32.204 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:38:44.403 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:38:44.404 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:38:44.405 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:38:44.405 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:38:44.405 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:39:46.025 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:39:46.025 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:39:46.025 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:39:46.025 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:39:46.026 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:40:02.036 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:40:02.037 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:40:02.037 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:40:02.037 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:40:02.037 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:42:47.923 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:42:47.924 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:42:47.924 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:42:47.924 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:42:47.924 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:44:23.158 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:44:23.160 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:44:23.160 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:44:23.160 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:44:23.160 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:48:34.793 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:48:34.794 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:48:34.794 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:48:34.794 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:48:34.794 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:51:13.234 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:51:13.236 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:51:13.236 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:51:13.236 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:51:13.236 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:55:06.693 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:55:06.695 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:55:06.695 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:55:06.695 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:55:06.695 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:56:00.755 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:56:00.757 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:56:00.757 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:56:00.757 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:56:00.757 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:56:28.796 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:56:28.796 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:56:28.796 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:56:28.797 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:56:28.797 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:56:29.972 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:56:29.973 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:56:29.973 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:56:29.973 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:56:29.973 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 21:56:49.037 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 21:56:49.038 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 21:56:49.038 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 21:56:49.038 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 21:56:49.038 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:08:51.086 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:08:51.087 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:08:51.087 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:08:51.087 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:08:51.087 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:09:48.618 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:09:48.619 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:09:48.619 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:09:48.620 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:09:48.620 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:10:18.931 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:10:18.932 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:10:18.932 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:10:18.932 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:10:18.933 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:10:33.221 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:10:33.222 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:10:33.222 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:10:33.223 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:10:33.223 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:11:08.324 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:11:08.325 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:11:08.325 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:11:08.325 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:11:08.325 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:11:18.310 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:11:18.311 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:11:18.311 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:11:18.311 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:11:18.311 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:11:35.158 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:11:35.158 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:11:35.159 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:11:35.159 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:11:35.159 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:12:26.946 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:12:26.947 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:12:26.947 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:12:26.947 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:12:26.947 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:12:45.928 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:12:45.928 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:12:45.928 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:12:45.929 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:12:45.929 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:34:19.357 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:34:19.359 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:34:19.359 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:34:19.359 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:34:19.360 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:38:25.090 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:38:25.091 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:38:25.091 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:38:25.091 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:38:25.091 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:41:18.812 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:41:18.813 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:41:18.813 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:41:18.813 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:41:18.813 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:41:45.723 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:41:45.724 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:41:45.724 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:41:45.724 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:41:45.724 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-09 22:57:16.224 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-09 22:57:16.242 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-09 22:57:16.242 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-09 22:57:16.242 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-09 22:57:16.242 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-10 13:37:13.509 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-10 13:37:13.509 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-10 13:37:13.510 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-10 13:37:13.510 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-10 13:37:13.510 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-10 14:07:33.784 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-10 14:07:33.786 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-10 14:07:33.786 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-10 14:07:33.786 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-10 14:07:33.786 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-10 15:02:27.332 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-10 15:02:27.355 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-10 15:02:27.355 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-10 15:02:27.356 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-10 15:02:27.356 [main] CreateSampleLogFile - This is a fatal message.
+[DEBUG] 2018-03-11 13:22:27.611 [main] CreateSampleLogFile - This is a debug message.
+[INFO ] 2018-03-11 13:22:27.628 [main] CreateSampleLogFile - This is an info message.
+[WARN ] 2018-03-11 13:22:27.628 [main] CreateSampleLogFile - This is a warn message.
+[ERROR] 2018-03-11 13:22:27.628 [main] CreateSampleLogFile - This is an error message.
+[FATAL] 2018-03-11 13:22:27.628 [main] CreateSampleLogFile - This is a fatal message.

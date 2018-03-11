@@ -132,3 +132,28 @@
 [WARN ] 2018-03-04 23:17:29.857 [qtp363771819-14] LoggingInDB - java.lang.NullPointerException
 [WARN ] 2018-03-04 23:18:29.858 [qtp363771819-23] LoggingInDB - java.lang.NullPointerException
 [FATAL] 2018-03-05 14:51:02.010 [qtp363771819-16] FileHandler - java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+[ERROR] 2018-03-11 12:52:30.549 [qtp363771819-18] FileHandler - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 12:52:56.206 [qtp363771819-12] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 12:52:56.216 [qtp363771819-14] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[ERROR] 2018-03-11 13:08:56.323 [qtp363771819-26] FileHandler - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:29:56.399 [qtp363771819-25] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:30:56.271 [qtp363771819-39] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:31:56.274 [qtp363771819-23] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:32:56.271 [qtp363771819-17] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:33:56.272 [qtp363771819-23] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:34:56.275 [qtp363771819-17] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:35:56.275 [qtp363771819-38] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:36:56.274 [qtp363771819-25] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:37:56.276 [qtp363771819-17] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:38:56.276 [qtp363771819-39] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:39:56.276 [qtp363771819-34] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:40:56.277 [qtp363771819-38] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:41:56.277 [qtp363771819-34] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:42:56.280 [qtp363771819-25] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:43:56.277 [qtp363771819-38] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:44:56.278 [qtp363771819-25] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:45:56.271 [qtp363771819-25] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:46:56.271 [qtp363771819-17] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:47:56.280 [qtp363771819-30] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:48:56.289 [qtp363771819-38] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 14:49:56.284 [qtp363771819-23] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
