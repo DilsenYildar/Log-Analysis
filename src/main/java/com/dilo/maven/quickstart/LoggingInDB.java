@@ -28,12 +28,10 @@ public class LoggingInDB {
 	 * @throws SQLException
 	 */
 	public void createOp(LogAttributes la) throws SQLException {
-
 		JsonHandler jh = new JsonHandler();
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-
 			String sql = "INSERT INTO json (data) VALUES ('" + jh.toJson(la) + "');";
 			stmnt.executeUpdate(sql);
 

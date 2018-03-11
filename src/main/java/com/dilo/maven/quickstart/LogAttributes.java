@@ -30,20 +30,12 @@ public class LogAttributes {
 		this.message = message;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getLogLevel() {
+		return loglevel;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	public String getLogger() {
-		return logger;
-	}
-
-	public void setLogger(String logger) {
-		this.logger = logger;
+	public void setLogLevel(String logLevel) {
+		this.loglevel = logLevel;
 	}
 
 	public String getTimestamp() {
@@ -54,12 +46,20 @@ public class LogAttributes {
 		this.timestamp = timestamp;
 	}
 
-	public String getLogLevel() {
-		return loglevel;
+	public String getLogger() {
+		return logger;
 	}
 
-	public void setLogLevel(String logLevel) {
-		this.loglevel = logLevel;
+	public void setLogger(String logger) {
+		this.logger = logger;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 	public String toString() {
