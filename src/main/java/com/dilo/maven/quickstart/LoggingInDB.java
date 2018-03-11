@@ -44,6 +44,9 @@ public class LoggingInDB {
 	/**
 	 * Database delete operation of logs given the URI parameters.
 	 * 
+	 * silme işlemi sadece logAttr=loglevel, logAttrType=[blablabla..] olduğunda
+	 * gerçekleştirilmektedir.
+	 * 
 	 * @param logAttr
 	 *            log attributes like 'loglevel'
 	 * @param logAttrType
@@ -52,15 +55,22 @@ public class LoggingInDB {
 	 * @throws IOException
 	 */
 	public void deleteOp(String logAttr, String logAttrType) throws SQLException, IOException {
+		String result = null;
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-			if (logAttrType.length() == 4) { // this is for INFO and WARN attributes type. OTHER POSSIBLE SOLUTIONS????
-				String sql = " delete from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + " ]';";
-				stmnt.executeUpdate(sql);
+			if (logAttrType.length() == 4) // this is for INFO and WARN attributes type.
+				logAttrType+=" ";
+			
+			String sql = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
+			ResultSet rs = stmnt.executeQuery(sql);
+			while (rs.next()) {
+				result = rs.getString("attributes");
 			}
-			String sql = " delete from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
-			stmnt.executeUpdate(sql);
+			if(result != null) {
+				String sql2 = " delete from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
+				stmnt.executeUpdate(sql2);
+			}
 		} catch (Exception e) {
 			logger.warn(e);
 			e.printStackTrace();
@@ -113,15 +123,9 @@ public class LoggingInDB {
 					queries.add(query);
 				}
 			} else {
-				if (logAttrType.length() == 4) { // this is for INFO and WARN attributes type. OTHER POSSIBLE
-													// SOLUTIONS????
-					String sql = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + " ]';";
-					ResultSet rs = stmnt.executeQuery(sql);
-					while (rs.next()) {
-						String query = rs.getString("attributes");
-						queries.add(query);
-					}
-				}
+				if (logAttrType.length() == 4) // this is for INFO and WARN attributes type.
+					logAttrType+=" ";
+				
 				String sql = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
 				ResultSet rs = stmnt.executeQuery(sql);
 				while (rs.next()) {

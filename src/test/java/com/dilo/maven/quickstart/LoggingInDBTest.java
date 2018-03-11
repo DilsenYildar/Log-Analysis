@@ -54,9 +54,8 @@ public class LoggingInDBTest {
 		try {
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
 			stmnt = connection.createStatement();
-
 			/**
-			 * deleteOp için setup kısmında kaydettiğim execute kısmında sileceğim
+			 * deleteOp için setup kısmında dbye kaydettiğim execute kısmında sileceğim
 			 * kayıt...
 			 */
 			la.setLogLevel("[DEBUG]");
@@ -104,7 +103,6 @@ public class LoggingInDBTest {
 			 */
 			assertEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
 											// aynı
-			System.out.println("Test başarılı. Kayıt db'ye eklendi ");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -128,28 +126,40 @@ public class LoggingInDBTest {
 			 * dbde yoktur... assertNull ile kontrolünü sağlarız...
 			 */
 			lidb.deleteOp(logAttr, logAttrType);
-			String sql2 = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
-			ResultSet rs2 = stmnt.executeQuery(sql2);
-			while (rs2.next()) {
-				resultAfterDelete = rs2.getString("attributes");
+			String sql = "select  * from logattr where attributes ->> '" + logAttr + "' = '[" + logAttrType + "]';";
+			ResultSet rs = stmnt.executeQuery(sql);
+			while (rs.next()) {
+				resultAfterDelete = rs.getString("attributes");
 			}
 			assertNull(resultAfterDelete);
-			System.out.println("Silmek istediğiniz kayıt db'den silindi.." + resultAfterDelete);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-			/**
-			 * hata olmasını beklediğim ve fonksiyonun ne yapacağını assert ettiğim bölüm...
-			 * 
-			 * loglevel=[DEBUG] olan kayıt silindikten sonra aynı kayıt için tekrar deleteOp
-			 * fonksiyonu çalıştırılmak istenirse yani var olmayan bir kaydı silmeye
-			 * çalışırsak null dönecektir, resultAfterDelete değişkenine db'deki sonuç daha
-			 * önce çekilmişti...
-			 */
-			lidb.deleteOp(logAttr, logAttrType);
-			if (resultAfterDelete == null) {
-				System.out.println("Silmek istediğiniz kayıt zaten db'de yok:" + resultAfterDelete);
-				assertNull(resultAfterDelete);
+	@Test
+	public void exceptionalScenarioForDeleteOp() {
+		String resultmistakendelete = null;
+		/**
+		 * hata olmasını beklediğim ve fonksiyonun ne yapacağını assert ettiğim bölüm...
+		 * 
+		 * loglevel=INFO diye bir kayıt olsun, programı çalıştırmadan önce database e
+		 * eklenmesin, bu kaydı silmek için deleteOp fonksiyonu çalıştırılmak istenirse
+		 * deleteOp böyle bir kayıt olmadığı için silmeyecektir. Silinmek istenen bu
+		 * kayıt için dbye sorgu atıldığında resultmistakendelete değişken null
+		 * dönecektir. assertNull ile kontrol ederiz..
+		 */
+		try {
+			lidb.deleteOp("loglevel", "INFO");
+
+			String sql2 = "select  * from logattr where attributes ->> 'loglevel' = '[INFO ]';";
+			ResultSet rs2 = stmnt.executeQuery(sql2);
+			while (rs2.next()) {
+				resultmistakendelete = rs2.getString("attributes");
 			}
-
+			assertNull(resultmistakendelete);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

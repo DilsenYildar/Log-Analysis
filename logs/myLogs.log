@@ -157,3 +157,7 @@
 [WARN ] 2018-03-11 14:47:56.280 [qtp363771819-30] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
 [WARN ] 2018-03-11 14:48:56.289 [qtp363771819-38] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
 [WARN ] 2018-03-11 14:49:56.284 [qtp363771819-23] LoggingInDB - org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
+[WARN ] 2018-03-11 21:27:47.358 [qtp363771819-17] LoggingInDB - org.postgresql.util.PSQLException: No results were returned by the query.
+[WARN ] 2018-03-11 21:27:47.437 [qtp363771819-16] LoggingInDB - org.postgresql.util.PSQLException: No results were returned by the query.
+[WARN ] 2018-03-11 21:27:51.594 [qtp363771819-12] LoggingInDB - org.postgresql.util.PSQLException: No results were returned by the query.
+[WARN ] 2018-03-11 21:28:51.607 [qtp363771819-18] LoggingInDB - org.postgresql.util.PSQLException: No results were returned by the query.
