@@ -56,7 +56,7 @@ public class LoggingInDBTest {
 			stmnt = connection.createStatement();
 
 			/**
-			 * deleteOp için setup kısmında dbye kaydettiğim execute kısmında sileceğim
+			 * deleteOp için setup kısmında kaydettiğim execute kısmında sileceğim
 			 * kayıt...
 			 */
 			la.setLogLevel("[DEBUG]");
