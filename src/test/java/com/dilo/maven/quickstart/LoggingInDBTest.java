@@ -18,6 +18,10 @@ import org.junit.Test;
 public class LoggingInDBTest {
 	private LoggingInDB lidb;
 	private LogAttributes la;
+	String logAttr;
+	String logAttrType;
+	Connection connection;
+	Statement stmnt;
 
 	@BeforeClass
 	public static void setUpBeforeClass(){
@@ -36,6 +40,17 @@ public class LoggingInDBTest {
 		System.out.println("before method");
 		lidb = new LoggingInDB();
 		la = new LogAttributes();
+		
+		try {
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			stmnt = connection.createStatement();} 
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		logAttr = "loglevel";
+		logAttrType = "DEBUG";
+		
 	}
 	@After
 	public void tearDown() {
@@ -52,8 +67,6 @@ public class LoggingInDBTest {
 		String result = null;
 		String expected = "{\"loglevel\":\"[FATAL]\",\"timestamp\":\" 2018-03-02 20:59:59.062 \",\"logger\":\"[main] CreateSampleLogFile \",\"message\":\"This is a fatal message.\"}";
 		// database'de olmasını istediğim format
-		Connection connection = null;
-		Statement stmnt = null;
 
 		la.setLogLevel("[FATAL]");
 		la.setTimestamp(" 2018-03-02 20:59:59.062 ");
@@ -63,20 +76,17 @@ public class LoggingInDBTest {
 		try {
 			lidb.createOp(la); // bu fonk. çalıştırıldıktan sonra database'e eklenen la'yı olduğu gibi result
 								// değişkenine çekeceğim...
-
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
-			stmnt = connection.createStatement();
 			String sql = "select  * from json where data ->> 'timestamp' = ' 2018-03-02 20:59:59.062 ';";
 			ResultSet rs = stmnt.executeQuery(sql);
 			while (rs.next()) {
 				result = rs.getString("data");
 			}
 			/**
-			 * database'den gelen result; {"logger": "[main] CreateSampleLogFile ",
+			 * database'den gelen result: {"logger": "[main] CreateSampleLogFile ",
 			 * "message": "This is a fatal message.", "loglevel": "[FATAL]", "timestamp": "
 			 * 2018-03-02 20:59:59.062 "}
 			 */
-			assertNotEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
+			assertEquals(expected, result); // beklediğim format ile createOp fonk. çalıştıktan sonra dbye eklenen
 												// aynı değil(postgresql'in jsonb tipinden dolayı olduğunu düşündüğüm değişiklik)
 			System.out.println("Test başarılı. Kayıt db'ye eklendi ");
 		} catch (SQLException e) {
@@ -91,15 +101,9 @@ public class LoggingInDBTest {
 	 */
 	@Test
 	public void deleteOp() {
-		Connection connection = null;
-		Statement stmnt = null;
 		String result = null, resultAfterDelete = null;
-		String logAttr = "loglevel";
-		String logAttrType = "DEBUG";
 
 		try {
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
-			stmnt = connection.createStatement();
 
 			String sql = "select  * from json where data ->> 'loglevel' = '[DEBUG]';";
 			ResultSet rs = stmnt.executeQuery(sql);
