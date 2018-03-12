@@ -25,12 +25,10 @@ public class LoggingInDBTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() {
-		System.out.println("before LoggingInDBClass");
 	}
 
 	@AfterClass
 	public static void tearDownAfterClass() {
-		System.out.println("after LoggingInDBClass");
 	}
 
 	/**
@@ -69,7 +67,6 @@ public class LoggingInDBTest {
 
 	@After
 	public void tearDown() {
-		System.out.println("after method");
 	}
 
 	/**
@@ -139,6 +136,11 @@ public class LoggingInDBTest {
 		}
 	}
 
+	/**
+	 * 
+	 * Test that if deleteOp function want to delete non-existing database record.
+	 * @description
+	 */
 	@Test
 	public void exceptionalScenarioForDeleteOp() {
 		String resultmistakendelete = null;
