@@ -35,8 +35,7 @@ public class UpdateReqContext extends AbstractHandler {
 		}
 		response.getWriter().write("<h1>Güncellendi.</h1>");
 		response.setContentType("text/html;charset=utf-8");
-		response.setStatus(HttpStatus.FORBIDDEN_403);
-		;
+		response.setStatus(HttpStatus.OK_200);
 		baseRequest.setHandled(true);
 	}
 }
