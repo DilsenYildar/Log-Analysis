@@ -55,7 +55,7 @@ public class DeleteReqContext extends AbstractHandler {
 			e.printStackTrace();
 		}
 		response.setContentType("text/html;charset=utf-8");
-		response.setStatus(HttpStatus.FORBIDDEN_403);
+		response.setStatus(HttpStatus.OK_200);
 		baseRequest.setHandled(true);
 	}
 }
