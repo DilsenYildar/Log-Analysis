@@ -42,7 +42,7 @@ public class QueryReqContext extends AbstractHandler {
 			response.getWriter().write("<p>" + lidb.queryOp(logAttr, logAttrType) + "</p>");
 		}
 		response.setContentType("text/html;charset=utf-8");
-		response.setStatus(HttpStatus.FORBIDDEN_403);
+		response.setStatus(HttpStatus.OK_200);
 		baseRequest.setHandled(true);
 	}
 }
