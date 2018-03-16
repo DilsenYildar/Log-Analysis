@@ -27,7 +27,7 @@ public class LogToDBContext extends AbstractHandler {
 		fh.createLogFile();
 
 		response.setContentType("text/html;charset=utf-8");
-		response.setStatus(HttpStatus.OK);
+		response.setStatus(HttpStatus.OK_200);
 		baseRequest.setHandled(true);
 	}
 
