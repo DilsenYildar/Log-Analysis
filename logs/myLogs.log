@@ -161,3 +161,39 @@
 [WARN ] 2018-03-11 21:27:47.437 [qtp363771819-16] LoggingInDB - org.postgresql.util.PSQLException: No results were returned by the query.
 [WARN ] 2018-03-11 21:27:51.594 [qtp363771819-12] LoggingInDB - org.postgresql.util.PSQLException: No results were returned by the query.
 [WARN ] 2018-03-11 21:28:51.607 [qtp363771819-18] LoggingInDB - org.postgresql.util.PSQLException: No results were returned by the query.
+[FATAL] 2018-03-23 09:59:42.064 [qtp500977346-14] FileHandler - java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+[ERROR] 2018-03-23 09:59:42.121 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 10:04:10.084 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 10:05:18.420 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 12:51:27.247 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: Protocol error.  Session setup failed.
+[ERROR] 2018-03-23 13:18:59.795 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: Protocol error.  Session setup failed.
+[ERROR] 2018-03-23 13:25:01.594 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "dilo"
+[ERROR] 2018-03-23 13:26:55.017 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "some-postgres"
+[ERROR] 2018-03-23 13:28:50.591 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "dilo"
+[ERROR] 2018-03-23 13:31:08.694 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 13:32:58.520 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[WARN ] 2018-03-23 13:33:19.451 [qtp500977346-20] LoggingInDB - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[WARN ] 2018-03-23 13:36:48.207 [qtp500977346-16] LoggingInDB - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 13:36:55.284 [qtp500977346-15] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 13:38:37.545 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 13:41:51.569 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 13:46:57.334 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 13:48:06.352 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: Protocol error.  Session setup failed.
+[ERROR] 2018-03-23 13:52:12.657 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+[ERROR] 2018-03-23 13:59:28.003 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: Connection to localhost:6002 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[ERROR] 2018-03-23 14:01:22.415 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: The connection attempt failed.
+[ERROR] 2018-03-23 14:39:47.301 [qtp500977346-18] FileHandler - org.postgresql.util.PSQLException: ERROR: relation "logattr" does not exist
+  Position: 13
+[ERROR] 2018-03-23 15:03:07.914 [qtp500977346-13] FileHandler - org.postgresql.util.PSQLException: ERROR: relation "logattr" does not exist
+  Position: 13
+[ERROR] 2018-03-23 15:08:47.912 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: ERROR: relation "logattr" does not exist
+  Position: 13
+[ERROR] 2018-03-23 16:51:33.819 [qtp500977346-18] FileHandler - org.postgresql.util.PSQLException: Connection to localhost:6002 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[ERROR] 2018-03-23 16:52:09.856 [qtp500977346-18] FileHandler - org.postgresql.util.PSQLException: Connection to localhost:6002 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[ERROR] 2018-03-23 16:53:03.408 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[ERROR] 2018-03-23 16:58:09.158 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[ERROR] 2018-03-23 16:59:33.114 [qtp500977346-13] FileHandler - org.postgresql.util.PSQLException: FATAL: database "dilo" does not exist
+[ERROR] 2018-03-23 17:00:19.544 [qtp500977346-15] FileHandler - org.postgresql.util.PSQLException: ERROR: relation "logattr" does not exist
+  Position: 13
+[ERROR] 2018-03-23 17:32:27.066 [qtp500977346-14] FileHandler - org.postgresql.util.PSQLException: ERROR: relation "logattr" does not exist
+  Position: 13

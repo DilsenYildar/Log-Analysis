@@ -30,7 +30,7 @@ public class LoggingInDB {
 	public void createOp(LogAttributes la) throws SQLException {
 		JsonHandler jh = new JsonHandler();
 		try {
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:6002/dilo", "galaksiya", "galaksiya");
 			stmnt = connection.createStatement();
 			String sql = "INSERT INTO logattr (attributes) VALUES ('" + jh.toJson(la) + "');";
 			stmnt.executeUpdate(sql);
@@ -57,7 +57,7 @@ public class LoggingInDB {
 	public void deleteOp(String logAttr, String logAttrType) throws SQLException, IOException {
 		String result = null;
 		try {
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:6002/postgres", "postgres", "mysecretpassword");
 			stmnt = connection.createStatement();
 			if (logAttrType.length() == 4) // this is for INFO and WARN attributes type.
 				logAttrType+=" ";
@@ -87,7 +87,7 @@ public class LoggingInDB {
 	 */
 	public void updateOp(String logAttr, String logAttrType) {
 		try {
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:6002/postgres", "postgres", "mysecretpassword");
 			stmnt = connection.createStatement();
 			String sql = "update logattr set attributes ->> 'loglevel' = '" + logAttrType
 					+ "' where attributes ->> 'message'='This is a debug message.';";
@@ -113,7 +113,7 @@ public class LoggingInDB {
 		List<String> queries = new ArrayList<String>();
 
 		try {
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dilo", "postgres", "dilo");
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:6002/dilo", "galaksiya", "galaksiya");
 			stmnt = connection.createStatement();
 			if (logAttr.equals("contains")) {
 				String sql = "select  * from logattr where attributes ->> 'logger' = '" + logAttrType + " ';";

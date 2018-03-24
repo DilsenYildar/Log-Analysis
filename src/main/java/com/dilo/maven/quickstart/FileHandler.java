@@ -13,8 +13,7 @@ import org.apache.logging.log4j.Logger;
 public class FileHandler {
 	private Logger logger = LogManager.getLogger();
 	HashSet<LogAttributes> hsAttr = new HashSet<LogAttributes>();
-	String logFile = "/home/dilo/eclipse-workspace/quickstart/logs/propertieslogs.log";
-
+	String logFile = "/home/asus/Desktop/LogAnalysis-master/logs/propertieslogs.log";
 	/**
 	 * Get log inputs from the logfile and add these to the hashset that type is
 	 * LogAttributes.
